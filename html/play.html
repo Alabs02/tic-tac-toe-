@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tic Tac Toe Game</title>
+    <link rel="stylesheet" href="../css/materialize.min.css">
+    <link rel="stylesheet" href="../css/material-icons.css">
+    <link rel="stylesheet" href="../css/app.css">
+</head>
+<body>
+    <header>
+        <div class="navbar-fixed">
+            <nav>
+                <div class="nav-wrapper indigo">
+                    <div class="container">
+                        <a href="../index.html" class="brand-logo center">Tic Tac Toe</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <div class="container center">
+        <h3 class="waves-light waves-effect center indigo-text text-darken-4 center-align">Welcome</h3>
+        <span id="demo"></span>
+    </div>
+
+    <section class="container center" id="card1">
+
+        <div class="center section" id="playerBoard">
+
+        </div>
+    </section>
+        <script id="template" type="x-tmpl-mustache">
+            {{#playerArray}}
+                <div class="row">
+                    <div class="col s12 m6">
+                        <div class="card" id="card">
+                        <div class="card-content">
+                            <div class="container">
+                              <!--  <a href="#user"><img class="circle container responsive-img" src="{{playerOneUrl}}"></a>-->
+                                <section class="container">
+                                    <span class="grey-text text-darken-3" id="" style="font-size: 18px;">{{playerNameOne}}</span>
+                                </section>
+                            </div><br><br><br><br>
+                            <div class="divider"></div>
+                            <div class="container">
+                               <!-- <a href="#user"><img class="circle responsive-img" src="{{playerTwoUrl}}"></a>-->
+                                <section class="container">
+                                    <span class="grey-text text-darken-3" id="" style="font-size: 18px;">{{playerNameTwo}}</span>
+                                </section>
+                            </div>
+                        </div>
+                        <div class="card-action" id="cardx">
+                            <a class="indigo-text text-darken-4" id="" style="font-size: 14px;">{{playerNameOne}}</a>
+                            <a class="indigo-text text-darken-4" id="" style="font-size: 14px;">{{playerNameTwo}}</a>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="section container center" id="play-btn">
+                    <a href="../html/app.html" class="btn-large waves-effect waves-light waves-purple pink">Play<i class="material-icons left">cloud</i></a>
+                </div>
+            {{/playerArray}}
+        </script>
+    
+    <script src="../js/jquery-2.2.4.min.js"></script>
+    <script src="../js/mustache.min.js"></script>
+    <script src="../js/materialize.min.js"></script>
+    <script src="../js/index.js"></script>
+</body>
+</html>

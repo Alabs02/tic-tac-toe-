@@ -1,0 +1,86 @@
+html,
+body {
+    height: 100%;
+    font-family: 'Open Sans', sans-serif;
+    background-color: gainsboro;
+}
+
+.title {
+    margin-top: 10px;
+    font-size: 24px;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.flex-center {
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-container {
+    display: flex;
+}
+
+.board {
+    width: 300px;
+    margin-top: 15px;
+}
+
+.btn-large {
+    width: 220px;
+    font-size: 20px;
+    margin-top: 30px;
+    border: 2px solid;
+    border-radius: 10px;
+}
+
+.square {
+    width: 90px;
+    height: 90px;
+    /* 
+    ============================
+        add below this second 
+    ============================*/
+    border: 3px solid mediumslateblue;
+    font-size: 56px;
+}
+
+.square:hover {
+    background: floralwhite;
+    cursor: pointer;
+}
+
+.winner {
+    display: none;
+    padding: 10px;
+    font-size: 32px;
+    color: royalblue;
+}
+
+#reg {
+    margin-top: 20px;
+}
+
+#cardx {
+    border-radius: 20px;
+    margin-top: 100px;
+}
+
+#card {
+    border-radius: 20px;
+    height: 300px;
+}
+
+#play-btn {
+    margin-top: 35px;
+    
+}
+#container {
+    margin-top: 55px;
+}
